@@ -32,7 +32,11 @@ function PostsList({isModalVisible, onStopPosting}) {
         <>
             {isModalVisible && (
             <Modal onClose={onStopPosting}>            
-                <NewPost onBodyChange={bodyChangeHandler} onAuthorChange={authorChangeHandler} />
+                <NewPost 
+                    onBodyChange={bodyChangeHandler} 
+                    onAuthorChange={authorChangeHandler}
+                    onCancel={onStopPosting}
+                 />
             </Modal> )}
             <ul className={classes.posts}>
                 <Post author={enteredAuthor} body={enteredBody} />
