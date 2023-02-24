@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-import Posts, {loader as postsLoader} from './routes/Posts'
+import Posts, {postsLoader} from './routes/Posts'
 import PostDetails, {postDetailsLoader} from './routes/PostDetails'
 import NewPost, { action as newPostAction } from './routes/NewPost'
 import RootLayout from './routes/RootLayout'
